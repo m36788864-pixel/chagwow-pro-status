@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHAGWOW SHOP • PRO STATUS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="nav">
+  <a class="brand" href="#">
+    <img src="logo.png" alt="CHAGWOW SHOP">
+  </a>
+  <nav>
+    <a href="#status">สถานะโปร</a>
+    <a href="#about">เกี่ยวกับ</a>
+  </nav>
+  <button class="refresh" id="refreshBtn">↻ รีเฟรช</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="pill"><span></span> SYSTEM STATUS • LIVE</div>
+    <h1>เช็กสถานะโปร<br><em>ได้ในหน้าเดียว</em></h1>
+    <p>ตรวจสอบสถานะบริการ Android และ iOS แบบเรียบง่าย พร้อมดูรายการที่กำลังปรับปรุงได้ทันที</p>
+    <div class="hero-actions"><a class="hero-btn" href="#status">ดูสถานะทั้งหมด <b>→</b></a><a class="shop-btn" href="https://chagwowshop.orynx.xyz/" target="_blank" rel="noopener noreferrer">ซื้อโปรแกรมช่วยเล่นใด้ที่ CHAGWOW SHOP <b>↗</b></a></div>
+  </div>
+  <div class="hero-logo">
+    <div class="logo-ring"></div>
+    <img src="logo.png" alt="">
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><small>รายการทั้งหมด</small><strong id="totalCount">0</strong></div>
+  <div class="stat good"><small>ใช้งานได้ปกติ</small><strong id="onlineCount">0</strong><i>●</i></div>
+  <div class="stat bad"><small>กำลังปรับปรุง</small><strong id="offlineCount">0</strong><i>●</i></div>
+</section>
+
+<section id="status" class="status-section">
+  <div class="section-top">
+    <div>
+      <span class="mini-title">STATUS CENTER</span>
+      <h2>สถานะบริการ</h2>
+    </div>
+    <div class="updated">อัปเดตล่าสุด <b id="lastUpdate">--</b></div>
+  </div>
+
+  <div class="controls">
+    <div class="tabs">
+      <button class="tab active" data-filter="all">ทั้งหมด</button>
+      <button class="tab" data-filter="Android">Android</button>
+      <button class="tab" data-filter="iOS">iOS</button>
+    </div>
+    <label class="search">⌕ <input id="searchInput" placeholder="ค้นหาโปร..."></label>
+  </div>
+
+  <div id="statusList"></div>
+</section>
+
+<section id="about" class="bottom-card">
+  <img src="logo.png" alt="CHAGWOW SHOP">
+  <div><strong>CHAGWOW SHOP</strong><span>PRO STATUS CENTER</span></div>
+  <p>หน้าตรวจสอบสถานะบริการสำหรับผู้ใช้งาน</p>
+</section>
+</main>
+
+<footer>© 2026 CHAGWOW SHOP • PRO STATUS</footer>
+<script src="script.js"></script>
+</body>
+</html>
